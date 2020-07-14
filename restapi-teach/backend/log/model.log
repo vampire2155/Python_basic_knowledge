@@ -1,0 +1,789 @@
+0401_15:19:18 Traceback (most recent call last):
+  File "E:\restapi-teach\backend\services\datamodel\common\models.py", line 205, in add
+    courseidList = [one['id'] for one in  data['courses']]
+  File "E:\restapi-teach\backend\services\datamodel\common\models.py", line 205, in <listcomp>
+    courseidList = [one['id'] for one in  data['courses']]
+TypeError: string indices must be integers
+
+0401_16:54:51 Traceback (most recent call last):
+  File "E:\restapi-teach\backend\services\datamodel\common\models.py", line 205, in add
+    courseidList = [one['id'] for one in  data['courses']]
+  File "E:\restapi-teach\backend\services\datamodel\common\models.py", line 205, in <listcomp>
+    courseidList = [one['id'] for one in  data['courses']]
+TypeError: string indices must be integers
+
+0922_19:25:00 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0922_19:25:48 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0922_19:26:25 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0922_19:26:49 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0922_19:27:04 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0922_19:27:44 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0922_19:33:28 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0922_19:34:10 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0922_19:38:04 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0922_19:39:37 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0922_19:39:56 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0922_19:43:41 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0927_23:14:55 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0927_23:15:22 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0929_09:18:18 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0929_09:18:52 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0929_09:18:59 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+0929_09:27:17 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+1015_21:18:51 Traceback (most recent call last):
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 206, in add
+    teacher.courses.add(*courseidList)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 898, in add
+    self._add_items(self.source_field_name, self.target_field_name, *objs)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1065, in _add_items
+    for obj_id in new_ids
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 466, in bulk_create
+    ids = self._batched_insert(objs_without_pk, fields, batch_size)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1148, in _batched_insert
+    self._insert(item, fields=fields, using=self.db)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\query.py", line 1125, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1284, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+
+1015_21:53:03 Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 252, in modify
+    teacher.courses.add(one['id'])
+TypeError: string indices must be integers
+
+1015_21:56:08 Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 252, in modify
+    teacher.courses.add(one['id'])
+TypeError: string indices must be integers
+
+1015_21:56:42 Traceback (most recent call last):
+  File "C:\Users\Think\Desktop\入口\自动化测试\restapi-teach\backend\services\datamodel\common\models.py", line 252, in modify
+    teacher.courses.add(one['id'])
+TypeError: string indices must be integers
+

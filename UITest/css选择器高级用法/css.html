@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css高级选择器用法</title>
+    <style>
+        /* ID 选择器     --在id前面加上  # 号 就可以定位到该元素 */
+        #abc {
+        color: red;
+        font-size: 12px;
+        }
+        /* class 选择器    --在class前面 加上 . 号  就可以定位到该元素 */
+        .qwwe{
+        color:yellow;
+        font-size:24px;
+        }
+        /*  标签选择器   ---比如a ，p  等都是标签 */
+        a{
+        background:green;
+        }
+        /* 标签选择 和 id选择器组合使用    --在标签后面跟上id即可定位到该元素，例如  a#abc 定位到的就是“人生得意。。。”这个标签   */
+        ul#ul{
+        background:pink;
+        }
+        /* 标签选择 和 class选择器组合使用  ---在标签后面跟上class即可定位到该元素，例如， p.kkk 定位到的就是 “P标签kkkk” 这个标签*/
+        p.kkk{
+        color:blue;
+        }
+        /*  分组选择器   --利用各个元素唯一的属性进行定位，多个元素之前用  英文逗号  ,  分隔   */
+        ul,b,.c1c1c1c1c1c1c1c1c1{
+        font-size:20px;
+        }
+        /*  属性选择器    利用属性的唯一性进行定位元素  */
+        [href]{
+        background:#66cc66;
+        }
+        /* 属性选择器 和  class选择器  组合使用 --在class后面加上该元素的属性即可定位到该元素，例如，.classp2[href] 定位到的就是 p2标签*/
+        .classp2[href]{
+        font-size:24px;
+        }
+        /*  标签选择器 和 属性选择器 组合使用  */
+        span2[title="character2"]{
+        font-size:24px;
+        color:orange;
+        }
+        /*  匹配属性的单词边界  使用 ~ 号  进行匹配，必须匹配的是一个完整的单词，例如，  span3[title~="hell"]  就是不行的*/
+        span3[title~="hello"]{
+        color:cyan;
+        }
+        /* 后代选择器  如下所示，div标签里面的标签都是 div的后代 ，通过 父标签 加 空格 加 后代 标签 进行元素定位(div ul b 表示div 下的ul下的b标签)  */
+        div ul b{
+        color:yellow;
+        }
+        /* 子元素选择器   --只能选择自己的儿子， 不能隔代*/
+        div[id="abcd"] > a{
+        font-size:24px;
+        color:red;
+        }
+        /* 相邻兄弟选择器  ---向后选择相邻的兄弟，不能中间有间隔，例如。#rrr + ul + ul 就表示id为rrr的相邻兄弟的相邻兄弟，即text为我是ul标签（id="abc"）的子标签3的元素  */
+        #rrr + ul + ul{
+        font-size:20px;
+        background:yellow;
+        }
+        /* 后续兄弟选择器  --- #ul4~ul 表示从id 为 ul4 开始的后面的同级元素。*/
+        #ul4~ul{
+        background:red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div id="abcd">
+        <a id="abc">人生得意须尽欢，莫使金樽空对月</a>
+        <ul id="rrr">我是ul标签（id="abc"）的子标签1</ul>
+        <ul>我是ul标签（id="abc"）的子标签2</ul>
+        <ul>我是ul标签（id="abc"）的子标签3</ul>
+        <ul id="ul4">我是ul标签（id="abc"）的子标签4</ul>
+        <ul>我是ul标签（id="abc"）的子标签5</ul>
+        <ul>我是ul标签（id="abc"）的子标签6</ul>
+        <ul>我是ul标签（id="abc"）的子标签7</ul>
+    </div>
+    <a class="qwwe">Hello Python！</a>
+    <p class="mmm">P标签，class是mmm</p>
+    <p class="kkk">P标签,class是kkkk</p>
+    <ul id="ul">ul标签</ul>
+    <b href="https://www.baidu.com">B标签，跳转到百度页面</b><br>
+    <p1 id=“pppp1” class="classp1" href="https://www.baidu1.com">P1标签，id是pppp1，class是classp1，具有href属性</p1><br>
+    <p2 id=“pppp2” class="classp2" href="https://www.baidu2.com">P2标签，id是pppp2，class是classp2，具有href属性</p2><br>
+    <c id="ccc" class="c1c1c1c1c1c1c1c1c1">C标签，id是ccc，class是c1c1c1c1c1c1c1c1c1</c><br>
+    <span1 calss="span1" title="character">span1</span1><br>
+    <span2 calss="span1" title="character2">span2</span2><br>
+    <span3 calss="span1" title="hello python sql">span3</span3><br>
+    <span4 >------------------------------------------------------------------------------------------------</span4><br>
+    <ul>
+        <p>时逢三五便团圆</p>
+        <p1>满城尽带黄金甲</p1>
+        <span>
+            <p>远程操作linux</p>
+            <p>css选择器的高级使用</p>
+            <b>子标签B</b>
+        </span>
+    </ul>
+</div>
+</body>

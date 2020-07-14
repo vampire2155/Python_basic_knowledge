@@ -1,0 +1,51 @@
+注：只能用于windows操作系统。
+默认使用的数据库是：SQLite3
+
+一、请先安装python环境（建议3.6 以上，3.5 也没关系）
+
+      检查是否安装了python环境的方法如下：
+      cmd 窗口中 -->输入：python   回车
+      如果出现python 的版本，则表示已经安装了python
+
+
+二、下载python库
+     运行《install.bat》，大概需要3-5分钟。仅第一次运行一次即可。
+
+
+三、启动项目
+      双击《run.bat》 即可启动项目。
+
+
+      以后每次启动项目，只需要执行【第三步】即可。
+
+
+四、访问路径
+      http://localhost/mgr/login/login.html
+      账号和密码：auto/sdfsdfsdf
+端口号已经被修改为 9000
+访问地址变为：http://localhost:9000/mgr/login/login.html
+
+
+注1：系统默认采用的是SQLite3 无服务器数据库。
+
+
+注2：系统默认访问接口是不用登录的，如果要改为需要登录，restapi-teach\backend\project 下的：settings_common.py 文件的最后一行。
+改为True  。注意大小写。
+
+
+常见错误：
+1、必须运行run.bat  不要关闭。才能访问。
+
+
+修改端口在：restapi-teach\backend\project\cherrypy_startup.py   端口已经被修改为 9000，所以登录时需要加上端口号。
+修改免登录在：restapi-teach\backend\project\settings_common.py
+切换数据库在：restapi-teach\backend\project\settings.py
+
+
+
+
+
+
+
+
+

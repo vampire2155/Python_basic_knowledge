@@ -1,0 +1,8 @@
+[
+  "test_couses000.py::TestCourse::()::test_listCourse",
+  "test_couses000.py::TestCourse::()::test_delCourse",
+  "cases/test_couses1.py::TestCourse::()::test_listCourse",
+  "cases/test_couses1.py::TestCourse::()::test_delCourse",
+  "cases/test_couses2.py::TestCourse::()::test_listCourse",
+  "cases/test_couses2.py::TestCourse::()::test_delCourse"
+]

@@ -1,0 +1,27 @@
+#- #test1
+name: tom
+age: 20
+---
+name: Jack
+age: 21
+---
+data:
+    -
+        name: auto
+        password: sdfsdfsdf
+        age: !!str 30  #使用两个感叹号把 int 类型 强制转换成 string类型。
+        age1: 30  #这个参数的类型 是  int类型
+---
+companies:  #意思是 companies 属性是一个数组（即python中的列表），每一个数组元素又是由 id、name、price 三个属性构成。
+    -  #这个表示 列表
+        ID: 1
+        name: company1
+        price: 200W
+    -
+        id: 2
+        name: company2
+        price: 500W
+    -
+        id: 3
+        age: 30
+        price: 300W
